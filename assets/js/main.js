@@ -23,24 +23,39 @@
   /* ---------- Menu mobile ---------- */
   var nav = document.getElementById('primaryNav');
   var menuToggle = document.getElementById('menuToggle');
+  var navClose = document.getElementById('navClose');
 
   function closeNav() {
     if (!nav) return;
     nav.classList.remove('open');
     document.body.classList.remove('nav-open');
-    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+    if (menuToggle) {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Abrir menu');
+    }
   }
   function openNav() {
     if (!nav) return;
     nav.classList.add('open');
     document.body.classList.add('nav-open');
-    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
+    if (menuToggle) {
+      menuToggle.setAttribute('aria-expanded', 'true');
+      menuToggle.setAttribute('aria-label', 'Fechar menu');
+    }
+    if (navClose) navClose.focus({ preventScroll: true });
   }
   if (menuToggle && nav) {
     menuToggle.addEventListener('click', function () {
       if (nav.classList.contains('open')) { closeNav(); } else { openNav(); }
     });
+    if (navClose) navClose.addEventListener('click', closeNav);
     nav.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeNav); });
+    // Tocar fora do painel (no scrim) fecha o menu.
+    document.addEventListener('click', function (e) {
+      if (!nav.classList.contains('open')) return;
+      if (nav.contains(e.target) || (menuToggle && menuToggle.contains(e.target))) return;
+      closeNav();
+    });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeNav(); });
     window.addEventListener('resize', function () { if (window.innerWidth > 820) closeNav(); });
   }

@@ -76,10 +76,16 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -.02em; font-weight: 700; }
 .site-header {
   position: fixed; inset: 0 0 auto 0; z-index: 50;
   padding: .85rem 0;
-  background: color-mix(in srgb, var(--bg) 78%, transparent);
-  backdrop-filter: blur(14px);
   border-bottom: 1px solid transparent;
-  transition: border-color .3s var(--ease), background .3s var(--ease), padding .3s var(--ease);
+  transition: border-color .3s var(--ease), padding .3s var(--ease);
+}
+/* O fundo "vidro" fica numa camada propria: backdrop-filter no .site-header
+   criaria um containing block e quebraria o position: fixed do menu mobile. */
+.header-bg {
+  position: absolute; inset: 0; z-index: -1;
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
 }
 .site-header.scrolled { border-bottom-color: var(--border); padding: .55rem 0; }
 
@@ -130,6 +136,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -.02em; font-weight: 700; }
 html[data-theme="light"] .icon-sun { display: none; }
 html[data-theme="light"] .icon-moon { display: block; }
 .menu-btn { display: none; }
+.nav-close { display: none; }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; padding: clamp(7rem, 14vw, 10rem) 0 clamp(3rem, 6vw, 5rem); overflow: hidden; }
@@ -453,8 +460,26 @@ html[data-theme="light"] .icon-moon { display: block; }
     padding: 6rem 1.6rem 2rem;
     transform: translateX(100%); transition: transform .35s var(--ease);
     box-shadow: var(--shadow);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
   .nav.open { transform: none; }
+  /* O header (z-index 50) e o menu ficam dentro do mesmo stacking context:
+     sem elevar o header, o scrim do body.nav-open (z-index 55) cobriria o
+     painel e o proprio botao do menu, deixando a tela escurecida sem saida. */
+  body.nav-open .site-header { z-index: 70; }
+  /* Com o menu aberto o header fica acima do scrim — fundo solido para o
+     conteudo desfocado da pagina nao vazar na barra. */
+  body.nav-open .header-bg { background: var(--bg); }
+  .nav-close {
+    display: grid; place-items: center;
+    position: absolute; top: .9rem; right: 1rem;
+    width: 40px; height: 40px; border-radius: 11px;
+    border: 1px solid var(--border); background: var(--surface);
+    transition: border-color .2s var(--ease);
+  }
+  .nav-close:hover { border-color: var(--accent); }
+  .nav-close svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
   .nav ul { flex-direction: column; align-items: stretch; gap: .4rem; }
   .nav a { display: block; padding: .8rem .5rem; font-size: 1rem; border-bottom: 1px solid var(--border); }
   .nav a::after { display: none; }
