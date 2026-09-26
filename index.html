@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Caio Alexei Lima Azevedo — Consultor SAP Business One &amp;, Desenvolvedor e Analista de Sistemas</title>
+<meta name="description" content="Portfólio de Caio Alexei Lima Azevedo: consultor SAP Business One e Desenvolvedor de sistemas no Rio de Janeiro — projetos de melhoria no ERP, automações em C# e SQL, integrações bancárias e Azure." />
+<meta name="author" content="Caio Alexei Lima Azevedo" />
+<meta name="theme-color" content="#0b0f14" />
+
+<!-- Open Graph / redes sociais -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Caio Alexei Lima Azevedo — Consultor SAP Business One &amp; Analista de Sistemas" />
+<meta property="og:description" content="Projetos de melhoria sistêmica no SAP Business One, automações em C# e SQL, integrações bancárias e infraestrutura Azure." />
+<meta property="og:image" content="assets/img/og-image.png" />
+<meta property="og:locale" content="pt_BR" />
+<!-- TODO: quando o site tiver domínio publicado, adicione <meta property="og:url" content="https://seu-dominio.com/" /> -->
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#inicio">Ir para o conteúdo</a>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="brand" href="#inicio" aria-label="Início">
+      <span class="brand-mark">CA</span>
+      <span class="brand-text">Caio Azevedo</span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a class="nav-cta" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.7 8.7 0 1 0 11.1 11.1z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primaryNav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="dot"></span> Rio de Janeiro · aberto a oportunidades</p>
+        <h1 class="hero-title">
+          Olá, eu sou <span class="grad">Caio Alexei</span>
+        </h1>
+        <p class="hero-role">Consultor SAP Business One · Desenvolvedor e Analista de Sistemas</p>
+        <p class="hero-pitch">
+          Atuo em projetos de melhoria sistêmica no <strong>ERP SAP Business One </strong> da parametrização
+          do processo de compras e pagamentos (P2P) à integração bancária via add-ons e customizações. Desenvolvo
+          automações e sistemas, sustento ambientes em
+          <strong>Cloud</strong> e documento processos para que a operação rode de forma
+          previsível e alinhada às regras de negócio.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contato">Fale comigo</a>
+          <!--<a class="btn btn-ghost" href="assets/cv/curriculo.pdf" download="Curriculo-Caio-Alexei-Lima-Azevedo.pdf">Baixar currículo</a>-->
+        </div>
+        <ul class="socials" aria-label="Redes profissionais">
+          <li><a href="https://www.linkedin.com/in/caio-alexei-b43426163/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a></li>
+          <li><a href="mailto:caioalexeilimaazevedo@hotmail.com" aria-label="E-mail">@</a></li>
+          <li><a href="https://wa.me/5521981751107" target="_blank" rel="noopener" aria-label="WhatsApp">wa</a></li>
+        </ul>
+      </div>
+
+      <div class="hero-card reveal" aria-hidden="true">
+        <div class="code-window">
+          <div class="code-bar"><span></span><span></span><span></span></div>
+          <pre><code><span class="c-key">const</span> perfil = {
+  nome: <span class="c-str">"Caio Alexei Lima Azevedo"</span>,
+  cargo: <span class="c-str">"Consultor SAP Business One e Desenvolvedor"</span>,
+  foco: [<span class="c-str">"SAP B1"</span>, <span class="c-str">"C#"</span>, <span class="c-str">"SQL"</span>, <span class="c-str">"Azure"</span>],
+  anos_experiencia: <span class="c-num">2</span>,
+  local: <span class="c-str">"Rio de Janeiro, BR"</span>,
+  ingles: <span class="c-str">"avançado"</span>,
+  disponivel: <span class="c-bool">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="stats reveal">
+        <div class="stat"><strong data-count="2">0</strong><span>Anos de experiência em TI</span></div>
+        <div class="stat"><strong data-count="3">0</strong><span>Experiências profissionais</span></div>
+        <div class="stat"><strong data-count="6">0</strong><span>Cursos e certificações</span></div>
+        <div class="stat"><strong data-count="2">0</strong><span>Formações de Especialização na Área</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-tag">01 — Sobre</span>
+        <h2>Quem sou eu</h2>
+        <p class="section-sub">Um pouco da minha trajetória e do que eu entrego no dia a dia.</p>
+      </header>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Sou formado em <strong>Técnico em Informática (Desenvolvimento Web)</strong> pelo Colégio
+            Realengo e curso <strong>Ciência da Computação</strong> na Universidade Veiga de Almeida
+            (8º período, conclusão em dezembro de 2026). Comecei em TI desenvolvendo APIs em
+            <strong>Python/Django</strong> na iniciação científica do Fuzzy Lab e, desde 2023, atuo com
+            <strong>ERP SAP Business One</strong> — hoje como Consultor SAP Business One / Analista de
+            Sistemas na Stefanini, após o estágio na Helexia Brasil.
+          </p>
+          <p>
+            Meu trabalho é traduzir regra de negócio em sistema funcionando: entendo o processo (compras,
+            contas a pagar, P2P, conciliação bancária), parametrizo o ERP, integro com add-ons e VAN
+            bancária, desenvolvo as automações em C# e SQL que faltam e documento tudo antes de virar
+            problema. Também cuido da infraestrutura cloud onde o ERP roda, com ambientes de produção e
+            homologação organizados.
+          </p>
+          <ul class="facts">
+            <li><span class="fact-k">Localização</span><span class="fact-v">Rio de Janeiro — RJ, Brasil</span></li>
+            <li><span class="fact-k">Área</span><span class="fact-v">ERP SAP Business One · Desenvolvimento &amp; Cloud</span></li>
+            <li><span class="fact-k">Experiência</span><span class="fact-v">2+ anos em TI (2023 — atual)</span></li>
+            <li><span class="fact-k">Idiomas</span><span class="fact-v">Português (nativo), Inglês (avançado)</span></li>
+            <li><span class="fact-k">Disponibilidade</span><span class="fact-v">Remoto, híbrido ou presencial</span></li>
+          </ul>
+        </div>
+
+        <aside class="about-side reveal">
+          <div class="avatar">
+            <img src="assets/img/perfil.jpg" alt="Foto de perfil de Caio Alexei Lima Azevedo" width="600" height="600" />
+          </div>
+          <div class="aside-card">
+            <h3>Como eu trabalho</h3>
+            <ul class="ticks">
+              <li>Entender a regra de negócio antes de mexer no sistema</li>
+              <li>Projeto entregue conforme arquitetura e padrões da companhia</li>
+              <li>Documentação de processos (Visio) e de TI para ISO 9001</li>
+              <li>Automação com C# e SQL no que é manual e repetitivo</li>
+              <li>Sustentação com SLA, Jira e comunicação clara — inclusive em inglês</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HABILIDADES ============ -->
+  <section class="section section-alt" id="habilidades">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-tag">02 — Habilidades</span>
+        <h2>Tecnologias e competências</h2>
+        <p class="section-sub">Ferramentas que uso no dia a dia, por área de atuação.</p>
+      </header>
+
+      <div class="skills-grid">
+        <article class="card reveal">
+          <div class="card-icon">🧩</div>
+          <h3>SAP Business One &amp; ERP</h3>
+          <ul class="chips">
+            <li>SAP Business One</li><li>BankPlus</li><li>Contract Plus</li>
+            <li>SAP HANA Database</li><li>P2P (Procure to Pay)</li><li>Compras &amp; contas a pagar</li>
+            <li>Conciliação bancária</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">☁️</div>
+          <h3>Cloud &amp; Infraestrutura</h3>
+          <ul class="chips">
+            <li>Microsoft Azure</li><li>Ambientes de produção e homologação</li><li>Linux &amp; Windows</li>
+            <li>Instalação/serviços SAP</li><li>Docker</li><li>Microsoft 365 (Teams, SharePoint)</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">💻</div>
+          <h3>Desenvolvimento &amp; Dados</h3>
+          <ul class="chips">
+            <li>C# / .NET</li><li>SQL (queries, triggers, transactions)</li><li>Python</li>
+            <li>Django</li><li>PHP / Laravel</li><li>JavaScript / Express.js</li>
+            <li>PostgreSQL &amp; MySQL</li><li>MongoDB</li><li>Git &amp; GitHub</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon">📊</div>
+          <h3>Gestão, Processos &amp; BI</h3>
+          <ul class="chips">
+            <li>Jira</li><li>Power BI (API do Jira)</li><li>Microsoft Visio</li>
+            <li>Microsoft Project</li><li>ISO 9001</li><li>COBIT / ITIL</li>
+            <li>Scrum &amp; PMBOK</li><li>Pacote Office</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="bars reveal">
+        <h3 class="bars-title">Nível técnico</h3>
+        <div class="bar"><span class="bar-label">SAP Business One (parametrização e sustentação)</span><span class="bar-track"><i data-width="85"></i></span></div>
+        <div class="bar"><span class="bar-label">Processos financeiros e bancários (P2P, VAN, add-ons)</span><span class="bar-track"><i data-width="80"></i></span></div>
+        <div class="bar"><span class="bar-label">SQL e modelagem de dados</span><span class="bar-track"><i data-width="80"></i></span></div>
+        <div class="bar"><span class="bar-label">C# / .NET (automações no ERP)</span><span class="bar-track"><i data-width="75"></i></span></div>
+        <div class="bar"><span class="bar-label">Cloud Azure e infraestrutura</span><span class="bar-track"><i data-width="75"></i></span></div>
+        <div class="bar"><span class="bar-label">Python / Django (back-end)</span><span class="bar-track"><i data-width="70"></i></span></div>
+        <div class="bar"><span class="bar-label">Gestão de projetos e BI (Jira, Visio, Power BI)</span><span class="bar-track"><i data-width="75"></i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIÊNCIA ============ -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-tag">03 — Experiência</span>
+        <h2>Trajetória profissional</h2>
+        <p class="section-sub">Onde atuei, o que fiz e quais resultados entreguei.</p>
+      </header>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Nov 2025 — Atual</span>
+            <h3>Consultor SAP Business One / Analista de Sistemas <span class="company">· Stefanini</span></h3>
+            <p class="timeline-loc">Rio de Janeiro, RJ · Tempo integral</p>
+            <ul class="ticks">
+              <li>À frente de projetos de melhoria sistêmica para o ERP SAP Business One, garantindo entrega conforme a arquitetura e as regras de negócio da companhia.</li>
+              <li>Parametrização e sustentação do departamento Financeiro no processo de compras até o pagamento final, incluindo a comunicação com o banco.</li>
+              <li>Integração do ERP com os add-ons bancários e a VAN: ordens de pagamento, retorno do banco, extrato e conciliação bancária.</li>
+              <li>Desenvolvimento e atualização de automações em C#, acompanhando as evoluções de arquitetura e de regra de negócio.</li>
+              <li>Acompanhamento de demandas e chamados via Jira e gestão de cronograma no Microsoft Project.</li>
+            </ul>
+            <ul class="chips small"><li>SAP Business One</li><li>C# / .NET</li><li>SQL</li><li>BankPlus</li><li>Contract Plus</li><li>Jira</li><li>Microsoft Project</li></ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Nov 2023 — Nov 2025</span>
+            <h3>Estágio em Tecnologia da Informação <span class="company">· Helexia Brasil</span></h3>
+            <p class="timeline-loc">Rio de Janeiro, RJ · Estágio</p>
+            <ul class="ticks">
+              <li>Gestão, sob supervisão, de projetos de melhoria e desenvolvimento no ERP SAP Business One, garantindo aderência às normas da companhia e integração entre as áreas.</li>
+              <li>Suporte à infraestrutura cloud Azure, instalação de serviços e programas do SAP, propostas de melhoria de arquitetura e criação de ambientes de produção e homologação.</li>
+              <li>Documentação dos processos internos do ERP com diagramas no Microsoft Visio, detalhando o processo atual e o futuro.</li>
+              <li>Desenvolvimento de consultas e triggers em SQL para relatórios e automações, incluindo transactions, e ajustes de funcionamento do ERP.</li>
+              <li>Atendimento a chamados de suporte SAP pelo Jira e participação em reuniões com o time global em inglês.</li>
+              <li>Estruturação da documentação de TI para ISO 9001 e criação de dashboards em Power BI consumindo a API do Jira (chamados, SLA e controles de TI).</li>
+              <li>Conhecimento e estruturação do fluxo P2P (Procure to Pay), módulo de compras e add-ons de gestão de contratos e pagamento bancário.</li>
+            </ul>
+            <ul class="chips small"><li>SAP Business One</li><li>Microsoft Azure</li><li>SAP HANA</li><li>SQL</li><li>Microsoft Visio</li><li>Power BI</li><li>Jira</li><li>Contract Plus</li><li>BankPlus</li></ul>
+          </div>
+        </li>
+
+        <li class="timeline-item reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Out 2023 — Jun 2024</span>
+            <h3>Desenvolvedor Python (Iniciação Científica) <span class="company">· Fuzzy Lab</span></h3>
+            <p class="timeline-loc">Rio de Janeiro, RJ</p>
+            <ul class="ticks">
+              <li>Desenvolvimento e refatoração de APIs com Python e o framework Django, buscando soluções robustas e escaláveis.</li>
+              <li>Versionamento de código com Git e GitHub, garantindo controle de mudanças e colaboração entre equipes.</li>
+              <li>Implementação de containers com Docker para padronizar ambientes de desenvolvimento e implantação.</li>
+              <li>Desenvolvimento de testes automatizados para assegurar a qualidade contínua da aplicação.</li>
+              <li>Modelagem de banco de dados com UML e MER e integração avançada com PostgreSQL.</li>
+            </ul>
+            <ul class="chips small"><li>Python</li><li>Django</li><li>PostgreSQL</li><li>Docker</li><li>Bootstrap</li><li>Testes automatizados</li><li>UML / MER</li></ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJETOS ============ -->
+  <section class="section section-alt" id="projetos">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-tag">04 — Projetos</span>
+        <h2>Projetos e entregas</h2>
+        <p class="section-sub">Seleção de trabalhos que mostram como eu resolvo problemas.</p>
+      </header>
+
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-badge">SAP Business One</span>
+          </div>
+          <h3>Fluxo P2P de compras a pagamento no ERP</h3>
+          <p>Estruturação e parametrização do processo de compras até o pagamento final no SAP Business One, com sustentação direta ao departamento Financeiro e definição do fluxo processual.</p>
+          <ul class="chips small"><li>SAP Business One</li><li>Compras</li><li>P2P</li><li>Financeiro</li></ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-badge">Integração bancária</span>
+          </div>
+          <h3>Integração do ERP com add-ons bancários e VAN</h3>
+          <p>Comunicação entre o ERP, os add-ons bancários e a VAN do banco para ordens de pagamento, retorno do banco, extrato e conciliação bancária — com o pleno funcionamento do ciclo validado ponta a ponta.</p>
+          <ul class="chips small"><li>BankPlus</li><li>Contract Plus</li><li>Conciliação bancária</li><li>Ordens de pagamento</li></ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-badge">Automação</span>
+          </div>
+          <h3>Automações em C# (.NET) para o ERP</h3>
+          <p>Desenvolvimento e atualização de automações em C# para o SAP Business One, mantendo conformidade com as mudanças de arquitetura e de regras de negócio.</p>
+          <ul class="chips small"><li>C#</li><li>.NET</li><li>SQL</li><li>Jira</li></ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-badge">Cloud &amp; Infra</span>
+          </div>
+          <h3>Ambientes SAP em Azure (produção e homologação)</h3>
+          <p>Suporte à infraestrutura cloud Azure, instalação de serviços e programas do SAP e criação de ambientes de produção e homologação, com propostas de melhoria de arquitetura para estabilidade do ambiente.</p>
+          <ul class="chips small"><li>Microsoft Azure</li><li>SAP HANA</li><li>Linux</li><li>Homologação</li></ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-badge">Dados &amp; BI</span>
+          </div>
+          <h3>Dashboards de TI com Power BI + API do Jira</h3>
+          <p>Dashboards consumindo a API do Jira para acompanhamento de chamados, SLA e controles de TI, junto da estruturação da documentação de TI para ISO 9001 e dos processos internos em Microsoft Visio.</p>
+          <ul class="chips small"><li>Power BI</li><li>API do Jira</li><li>ISO 9001</li><li>Visio</li></ul>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-top">
+            <span class="project-badge">Back-end</span>
+          </div>
+          <h3>APIs em Django com Docker e PostgreSQL</h3>
+          <p>Desenvolvimento e refatoração de APIs em Python/Django na iniciação científica do Fuzzy Lab, com containers Docker, testes automatizados, modelagem UML/MER e integração avançada com PostgreSQL.</p>
+          <ul class="chips small"><li>Python</li><li>Django</li><li>Docker</li><li>PostgreSQL</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORMAÇÃO ============ -->
+  <section class="section" id="formacao">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-tag">05 — Formação</span>
+        <h2>Formação e certificações</h2>
+        <p class="section-sub">Base acadêmica e certificações técnicas.</p>
+      </header>
+
+      <div class="two-col">
+        <div class="reveal">
+          <h3 class="col-title">Formação acadêmica</h3>
+          <ul class="list-cards">
+            <li>
+              <strong>Ciência da Computação (em andamento — 8º período)</strong>
+              <span>Universidade Veiga de Almeida · Ago 2022 — Dez 2026</span>
+            </li>
+            <li>
+              <strong>Técnico em Informática — Desenvolvimento Web</strong>
+              <span>Colégio Realengo · Jan 2017 — Dez 2019</span>
+            </li>
+            <li>
+              <strong>Ciências Atuariais &amp; Estatística - Trancado</strong>
+              <span>Universidade Federal do Rio de Janeiro · Mar 2021 — Ago 2022</span>
+            </li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <h3 class="col-title">Certificações e cursos</h3>
+          <ul class="list-cards">
+            <li><strong>Microsoft Azure Fundamentals (AZ-900)</strong><span>Ka Solutions, Microsoft Gold Partner · 2025 · 8h</span></li>
+            <li><strong>Microsoft Security (SC-900)</strong><span>Ka Solutions, Microsoft Gold Partner · 2025 · 8h</span></li>
+            <li><strong>Managing Clean Core for SAP S/4HANA Cloud</strong><span>SAP · 2025 · 2h</span></li>
+            <li><strong>Gestão e Governança: COBIT, ITIL, Scrum e PMBOK</strong><span>Ka Solutions · 2025 · 4h</span></li>
+            <li><strong>Back End Development and APIs</strong><span>freeCodeCamp · 2023 · 300h (JavaScript, Express, MongoDB, API REST, npm, Mongoose) — <a href="https://www.freecodecamp.org/certification/Caio_Alexei/back-end-development-and-apis" target="_blank" rel="noopener">certificado</a></span></li>
+            <li><strong>English Course — Advanced</strong><span>CNA · 2021 — 2023 · 300h</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="section section-alt" id="contato">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-tag">06 — Contato</span>
+        <h2>Vamos conversar</h2>
+        <p class="section-sub">Aberto a oportunidades, freelances e trocas técnicas.</p>
+      </header>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-item" href="mailto:caioalexeilimaazevedo@hotmail.com">
+            <span class="ci-icon">✉️</span>
+            <span><strong>E-mail</strong><em>caioalexeilimaazevedo@hotmail.com</em></span>
+          </a>
+          <a class="contact-item" href="https://wa.me/5521981751107" target="_blank" rel="noopener">
+            <span class="ci-icon">📱</span>
+            <span><strong>WhatsApp</strong><em>+55 (21) 98175-1107</em></span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/caio-alexei-b43426163/" target="_blank" rel="noopener">
+            <span class="ci-icon">💼</span>
+            <span><strong>LinkedIn</strong><em>/in/caio-alexei-b43426163</em></span>
+          </a>
+          <!--
+          <a class="contact-item" href="assets/cv/curriculo.pdf" download="Curriculo-Caio-Alexei-Lima-Azevedo.pdf">
+            <span class="ci-icon">📄</span>
+            <span><strong>Currículo</strong><em>Baixar PDF (PT-BR)</em></span>
+          </a>
+          -->
+        </div>
+
+        <!-- Para receber mensagens de verdade: crie um form no https://formspree.io
+             e troque o action abaixo por https://formspree.io/f/SEU-ID -->
+
+        <!--
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/SEU-ID" method="POST" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required placeholder="Seu nome" autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required placeholder="voce@empresa.com" autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="assunto">Assunto</label>
+            <input id="assunto" name="assunto" type="text" placeholder="Proposta, vaga, consultoria..." />
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Escreva sua mensagem..."></textarea>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit">Enviar mensagem</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+        -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">CA</span>
+      <div>
+        <strong>Caio Alexei Lima Azevedo</strong>
+        <p>Consultor SAP Business One — Desenvolvimento, Cloud &amp; Processos</p>
+      </div>
+    </div>
+    <nav class="footer-nav" aria-label="Navegação do rodapé">
+      <a href="#sobre">Sobre</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <p class="copyright">© <span id="year">2026</span> Caio Alexei Lima Azevedo. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Voltar ao topo">↑</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
